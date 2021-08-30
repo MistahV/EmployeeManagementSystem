@@ -117,7 +117,7 @@ const addRole = () => {
         {
             type: "input",
             name: "newRoleSalary",
-            message: "Enter the annual salary amount for the new role:"
+            message: "Enter the annual salary amount for the new role (make sure not to include any commas):"
         },
         {
             type: "input",
@@ -156,7 +156,7 @@ const addEmployee = () => {
         {
             type: "input",
             name: "newEmployeeManager",
-            message: "Enter the corresponding manager ID for the new employee (just press _____ if none):"
+            message: "Enter the corresponding manager ID for the new employee:"
         }
     ]).then(({newEmployeeFirst, newEmployeeLast, newEmployeeRoleID, newEmployeeManager}) => {
         const sqlString = `
